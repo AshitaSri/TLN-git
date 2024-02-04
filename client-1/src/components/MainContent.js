@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
       // Fetch task completion percentages from the server
       const fetchTaskCompletion = async () => {
         try {
-          const response = await fetch('http://localhost:5000/dashboard', {
+          const response = await fetch(`${window.location.origin}/dashboard`, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
