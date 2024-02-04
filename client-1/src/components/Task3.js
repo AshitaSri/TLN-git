@@ -105,7 +105,7 @@ const FillInBlanksGame = () => {
       const token = localStorage.getItem('token');
   
       // Send a request to the server to update task3
-      const response = await fetch('http://localhost:5000/updateTask3', {
+      const response = await fetch(`${window.location.origin}/updateTask3`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
