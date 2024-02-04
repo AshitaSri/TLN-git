@@ -12,7 +12,7 @@ function RightSidebar() {
       try {
         const token = localStorage.getItem('token');
 
-        const response = await fetch('http://localhost:5000/getTaskCompletionData', {
+        const response = await fetch(`${window.location.origin}/getTaskCompletionData`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
