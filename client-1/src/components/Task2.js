@@ -71,7 +71,7 @@ const MatchingGame = () => {
       const token = localStorage.getItem('token');
   
       // Send a request to the server to update task2
-      const response = await fetch('http://localhost:5000/updateTask2', {
+      const response = await fetch(`${window.location.origin}/updateTask2`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
