@@ -105,7 +105,7 @@ const SmallestNumberGame = () => {
       const token = localStorage.getItem('token');
   
       // Send a request to the server to update task1
-      const response = await fetch('http://localhost:5000/updateTask1', {
+      const response = await fetch(`${window.location.origin}/updateTask1`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
